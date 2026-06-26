@@ -1,4 +1,4 @@
-import { Menu, Download, Search, Coffee } from 'lucide-react';
+import { Menu, Download, Search } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
 
@@ -79,26 +79,7 @@ export default function Header({ onMenuClick, title, onSearchOpen }: HeaderProps
             <span className="hidden sm:inline">Install App</span>
           </button>
         )}
-        <a
-          href="https://www.buymeacoffee.com/lifeos"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden sm:flex items-center gap-1.5 text-sm font-semibold py-2 px-3 rounded-xl transition-all duration-200 hover:opacity-90"
-          style={{ background: 'linear-gradient(135deg, #7c3aed, #4f46e5)', color: '#fff', boxShadow: '0 4px 14px rgba(124,58,237,0.4)' }}
-          title="Enjoying LifeOS? Support the developer with a coffee ☕"
-        >
-          <Coffee size={14} />
-          <span>Buy Me a Coffee</span>
-        </a>
-        <a
-          href="https://www.buymeacoffee.com/lifeos"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-ghost p-2 sm:hidden"
-          title="Buy Me a Coffee ☕"
-        >
-          <Coffee size={18} />
-        </a>
+
       </div>
     </header>
   );
