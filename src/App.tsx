@@ -96,7 +96,7 @@ function AppLayout() {
 
   return (
     <div className="flex h-screen overflow-hidden" style={{ background: 'var(--app-bg)' }}>
-      <Sidebar mobileOpen={mobileMenuOpen} onMobileClose={() => setMobileMenuOpen(false)} />
+      <Sidebar mobileOpen={mobileMenuOpen} onMobileClose={() => setMobileMenuOpen(false)} onMobileOpen={() => setMobileMenuOpen(true)} />
       <div className="flex flex-col flex-1 min-w-0 overflow-hidden">
         <Header onMenuClick={() => setMobileMenuOpen(true)} title={title} onSearchOpen={() => setSpotlightOpen(true)} />
         <main className="flex-1 overflow-y-auto">
